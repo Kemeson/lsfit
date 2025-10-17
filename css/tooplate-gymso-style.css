@@ -816,3 +816,25 @@ https://www.tooplate.com/view/2119-gymso-fitness
                 height: 300px;
             }
         }
+        
+        /* Posiciona as setas na parte inferior do carrossel */
+        #carouselTexto .carousel-control-prev,
+        #carouselTexto .carousel-control-next {
+            bottom: 20px; /* Mesmo valor dos indicadores para alinhar */
+            top: auto; /* Remove a posição superior padrão */
+            width: 5%; /* Ajusta a largura das setas */
+        }
+
+        /* Garante que o conteúdo do carrossel não seja sobreposto */
+        #carouselTexto .carousel-inner {
+            padding-bottom: 60px; /* Espaço reservado para setas e indicadores */
+        }
+
+        /* Ajusta a posição das setas para não ficarem muito próximas das bordas */
+        #carouselTexto .carousel-control-prev {
+            left: 10px;
+        }
+
+        #carouselTexto .carousel-control-next {
+            right: 10px;
+        }
